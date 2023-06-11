@@ -1,0 +1,40 @@
+environment                             = "AVD-VA"
+intune_environment                      = "A"
+user_lut_num                            = "011"
+shard_count                             = "4"
+avd_vm_count                            = "1"
+location                                = "usgovvirginia"
+prefix                                  = "CAZ-AVDN-"
+local_admin_username                    = "localadmin"
+keyvault_name                           = "CAZ-VMKV-P-DKV-VM43"
+keyvault_secret                         = "VMPassword"
+keyvault_resource_group                 = "CAZ-RCWPAVD-P-RGP-KV"
+avd_vnet_rg                             = "CAZ-MANAGE-P-RGP-CrossTenant"
+avd_route_table_rg                      = "CAZ-MANAGE-P-RGP-CrossTenant"
+avd_subnet_rg_name                      = "CAZ-MANAGE-P-RGP-CrossTenant"
+#aad_group_name                         = "RCWP-AVD-USERS-GP-1"
+aad_group_name                          = "RCWP-AVD-Users-Testers"
+workspace_display_name                  = "Army 365 AVD Workspace - Virginia"
+avd_display_name                        = "Army Desktop"
+azure_managed_image_name                = "window-11-AVD-STIG"
+azure_shared_image_gallery_name         = "PROD_AVD_CORE_Gallery"
+azure_sig_resource_group_name           = "PROD-AVD-CORE-IMAGES-RG"
+avd_subnet_range                        = [
+                                            "10.49.2.0/26",
+                                            "10.49.2.64/26",
+                                            "10.49.2.128/26",
+                                            "10.49.2.192/26"
+                                        ]
+
+avd_subnet_name                         = "vGFE-Virginia-vNext-Subnet"
+avd_vnet_name                           = "CAZ-MANAGE-P-RCWPAVD-EAST-VNET"
+avd_route_table_name                    = "CAZ-AVDFW-RCWPAVDA365-EAST-P-RT"
+fslogix_storage_account_rg              = "CAZ-RCWPAVD-P-RGP-SA-RG"
+### added infratructure encryption
+fslogix_storage_account_name            = "fslogixshard00"
+persistavd_storage_account_name         = "persistavd10"
+load_balancer_type                      = "BreadthFirst"
+fslogix_hostname                        = "fslogixshard00"
+private_dns_zone_name                   = "privatelink.blob.core.usgovcloudapi.net"
+log_analytics_workspace_name            = "CAZ-RCWPAVD-P-RGP-LAW-01"
+log_analytics_workspace_rg              = "CAZ-RCWPAVD-P-RGP-LAW-RG"
